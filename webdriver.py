@@ -17,7 +17,7 @@ PHONE_NUMBER_OR_EMAIL=" YOURPHONENUMBER@txt.att.net"
     # if you are using verizion it's YOURPHONENUMBER@vtext.com
     # if you are using tmobile it's  YOURPHONENUMBER@@tmomail.net
 YOUR_GITHUB_USERNAME = "TheLastSultan"
-YOUR_GITHUB_PASS = "allah199"
+YOUR_GITHUB_PASS = "YOURPASS"
 
 
 
@@ -33,7 +33,7 @@ def send_alert_email(subject, body, to=[]):
     """
 
     from_mail = gmail_user
-    # to = ['shan.z@leantaas.com']
+    to = ['EXAMPLEEMAIL@EMAIL.COM']
 
     email_text = """From: %s
 To: %s
@@ -70,8 +70,8 @@ def login():
     time.sleep(1)
 
     # Enter your username and password
-    driver.find_element_by_id('login_field').send_keys("TheLastSultan")
-    driver.find_element_by_id('password').send_keys("allah199")
+    driver.find_element_by_id('login_field').send_keys("YOURUSERNAME")
+    driver.find_element_by_id('password').send_keys("YOURPASS")
     driver.find_element_by_name('commit').click()
     time.sleep(1)
 

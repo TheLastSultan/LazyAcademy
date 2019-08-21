@@ -1,5 +1,5 @@
 # Lazy Academy 
-Here is a short script I wrote for automatic sign-in using Python, selenium, and an STP library. IMPORTANT: If any TAs are reading this right now pls ignore this is just another assessment practice repo. 
+Here is a short script for automatic sign-in using Python, selenium, and an STP library. IMPORTANT: Please use this responsibly and on your own computers. It's not meant to cheat the system, it's just meant to make a/A a little less stressful. 
 
 
 ## Getting Started
@@ -8,7 +8,7 @@ Please read the directions carefully. I’ve tried my best to streamline these t
 
 ## Prerequisites
 
-Python and related programs,  Chromewebdriver, and about an hour. 
+Python and related programs,  Chromewebdriver, and about 30 min to an hour. 
 
 ## Installing
 
@@ -46,18 +46,20 @@ Also FYI you can send a text through email.
 
 For automatic running of the script I would recommend utilizing Cron. It comes preloaded with all linux and macs.  In the crontab type: 
 
-'''
+```
  Crontab -e
  Select "nano" option
-'''
+```
 
 Enter the following strings in crontab. Don't forget to edit the absolute path!
- 
+
+```
  50 8   *   *   1-5    bash -c "python absolutepath/webdriver.py
  0  13  *   *   1-5    bash -c "python absolutepath/webdriver.py
  55 15  *   *   1-5    bash -c "python absolutepath/webdriver.py
+```
 
-Enjoy!
+Enjoy! There are also a dozen other ways to schedule task if you find cron confusing.
 
 ## Author
 
